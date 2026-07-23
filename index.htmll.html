@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FashionAura</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    a:focus, button:focus, input:focus, textarea:focus {
+      outline: 2px solid #f59e0b; outline-offset: 2px;
+    }
+    .card { transition: transform 0.3s ease-in-out; }
+    .card:hover { transform: translateY(-5px); }
+    .hero-bg {
+      background-image: url('falogo.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+  <!-- HEADER -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-3xl font-bold text-yellow-600 animate-pulse">FashionAura</h1>
+      <nav>
+        <a href="login.html" class="text-yellow-600 hover:text-yellow-800 font-semibold">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-10">
+    <!-- HERO -->
+    <section class="hero-bg relative h-screen flex items-center justify-center mb-16 rounded-xl shadow-xl">
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div class="relative z-10 text-center px-6 max-w-3xl">
+        <h2 class="text-white text-5xl font-bold mb-6 leading-tight">
+          Welcome to <span class="text-yellow-400">FashionAura</span>
+        </h2>
+        <p class="text-white text-lg mb-8">
+          Step into the world of elegance and personality-driven fashion. At FashionAura, we help you redefine your style with expert advice and personalized services.
+        </p>
+        <a href="explore.html">
+          <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-8 py-3 rounded-full text-lg transition-transform hover:scale-105">
+            Start Exploring
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="grid gap-8 md:grid-cols-3 mb-16">
+      <!-- Personal Styling -->
+      <div class="card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl">
+        <img src="ps.jpg" alt="Styling" class="w-full h-80 object-cover" />
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-2">Personal Styling</h2>
+          <p class="text-gray-600 mb-4">Custom styling tailored to your personality.</p>
+          <a href="personal styling.html">
+
+          <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Explore</button> </a>
+        </div>
+      </div>
+
+      <!-- Wardrobe Makeover -->
+      <div class="card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl">
+        <img src="wm.jpg" alt="Outfits" class="w-full h-80 object-cover" />
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-2">Wardrobe Makeover</h2>
+          <p class="text-gray-600 mb-4">Revamp your wardrobe with expert advice.</p>
+          <a href="Wardable.html">
+
+          <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Explore</button></a>
+        </div>
+      </div>
+
+      <!-- Fashion Consultation -->
+      <div class="card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl">
+        <img src="fc.jpg" alt="Consulting" class="w-full h-80 object-cover" />
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-2">Fashion Consultation</h2>
+          <p class="text-gray-600 mb-4">Get professional advice on your style.</p>
+          <a href="Consultation Fashion.html">
+
+          <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Explore</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXTERNAL LINKS -->
+    <section class="mt-16">
+      <h3 class="text-center text-lg font-semibold text-yellow-600 mb-6">YOU CAN VISIT TO STYLE YOURSELF</h3>
+      <div class="overflow-x-auto">
+        <table class="w-full text-center border border-gray-300">
+          <thead>
+            <tr class="bg-yellow-100">
+              <th class="border p-3"><a target="_blank" href="https://www.amazon.in" class="text-yellow-700 hover:underline">Open Amazon</a></th>
+              <th class="border p-3"><a target="_blank" href="https://www.myntra.com/" class="text-yellow-700 hover:underline">Open Myntra</a></th>
+              <th class="border p-3"><a target="_blank" href="https://www.nykaafashion.com/" class="text-yellow-700 hover:underline">Open Nykaa</a></th>
+              <th class="border p-3"><a target="_blank" href="https://www.purplle.com/" class="text-yellow-700 hover:underline">Open Purple</a></th>
+              <th class="border p-3"><a target="_blank" href="https://www.ajio.com/" class="text-yellow-700 hover:underline">Open Ajio</a></th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </section>
+
+   <!-- CONTACT FORM -->
+<section class="mt-16 max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+  <h2 class="text-2xl font-semibold mb-6 text-yellow-600 text-center">Get in Touch</h2>
+  <form id="contactForm" action="https://formspree.io/f/xnndvozk" method="POST" class="space-y-4" novalidate>
+    <input type="text" name="name" placeholder="Your Name" required class="w-full border rounded px-4 py-2 focus:ring-2 focus:ring-yellow-400" />
+    <input type="email" name="email" placeholder="Your Email" required class="w-full border rounded px-4 py-2 focus:ring-2 focus:ring-yellow-400" />
+    <input type="text" name="contact" placeholder="Contact No." required class="w-full border rounded px-4 py-2 focus:ring-2 focus:ring-yellow-400" />
+    <textarea name="message" placeholder="Your Message" required class="w-full border rounded px-4 py-2 focus:ring-2 focus:ring-yellow-400 resize-y"></textarea>
+    <button type="submit" class="w-full bg-yellow-500 text-white py-2 rounded hover:bg-yellow-600">Send Message</button>
+  </form>
+
+  <!-- Success Message -->
+  <div id="successMessage" class="mt-4 p-4 bg-green-100 text-green-700 rounded-lg text-center hidden">
+    <p>Message Sent Successfully! We'll get back to you soon.</p>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const successMessage = document.getElementById('successMessage');
+
+  // Handle form submission
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    // Use Formspree's API to submit the form without page reload
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form)
+    })
+    .then(response => {
+      if (response.ok) {
+        form.reset(); // Reset the form after successful submission
+        successMessage.classList.remove('hidden'); // Show success message
+        setTimeout(() => {
+          successMessage.classList.add('hidden'); // Hide after 5 seconds
+        }, 5000);
+      } else {
+        alert('There was an issue with your submission. Please try again later.');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('your message has been sent successfully');
+    });
+  });
+</script>
+
+
+    <!-- CHATBOT -->
+    <div id="chatbot-toggle" class="fixed bottom-6 right-6 bg-yellow-400 text-white p-4 rounded-full shadow-lg cursor-pointer hover:bg-yellow-500 text-xl z-50">🤖</div>
+
+    <div id="chatbot-window" class="hidden fixed bottom-20 right-6 w-80 bg-white rounded-lg shadow-lg border border-gray-300 z-50">
+      <div class="bg-yellow-500 text-white px-4 py-2 rounded-t-lg flex justify-between items-center">
+        <span class="font-semibold">FashionBot</span>
+        <button onclick="toggleChat()" class="font-bold">×</button>
+      </div>
+      <div id="chat-log" class="p-4 h-64 overflow-y-auto bg-gray-50 space-y-2 text-sm"></div>
+      <div class="p-3 border-t flex gap-2">
+        <input id="chat-input" type="text" placeholder="Ask me about outfits..." class="flex-1 px-3 py-2 border rounded focus:ring-yellow-400" />
+        <button onclick="sendMessage()" class="bg-yellow-400 hover:bg-yellow-500 text-white px-4 py-2 rounded">Send</button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const chatbotToggle = document.getElementById('chatbot-toggle');
+    const chatbotWindow = document.getElementById('chatbot-window');
+    const chatLog = document.getElementById('chat-log');
+    const chatInput = document.getElementById('chat-input');
+
+    chatbotToggle.addEventListener('click', toggleChat);
+
+    function toggleChat() {
+      chatbotWindow.classList.toggle('hidden');
+    }
+
+    function sendMessage() {
+      const userMsg = chatInput.value.trim();
+      if (!userMsg) return;
+
+      addChatBubble('You', userMsg, 'right');
+
+      const response = generateBotResponse(userMsg);
+      setTimeout(() => {
+        addChatBubble('FashionBot', response, 'left');
+      }, 600);
+
+      chatInput.value = '';
+    }
+
+    function addChatBubble(sender, message, side) {
+      const bubble = document.createElement('div');
+      bubble.className = `flex ${side === 'right' ? 'justify-end' : 'justify-start'}`;
+      bubble.innerHTML = `<div class="bg-${side === 'right' ? 'yellow-200' : 'gray-200'} px-3 py-2 rounded-lg max-w-[80%] shadow">${message}</div>`;
+      chatLog.appendChild(bubble);
+      chatLog.scrollTop = chatLog.scrollHeight;
+    }
+
+    function generateBotResponse(input) {
+  input = input.toLowerCase();
+
+  // Helper: Pick random message
+  function randomResponse(responses) {
+    return responses[Math.floor(Math.random() * responses.length)];
+  }
+
+  // Outfit suggestions database
+  const responses = {
+    weather: [
+      "It's sunny today ☀️ — how about a light cotton shirt and denim shorts with sunglasses?",
+      "Clear skies! A floral dress or a polo tee with chinos would be perfect.",
+      "Great weather out there! Try linen trousers and a breezy top."
+    ],
+    cold: [
+      "It's chilly! 🧥 You can wear a warm trench coat, woolen scarf, and boots.",
+      "Layer up with a thermal top, hoodie, and long coat. Don’t forget gloves!",
+      "Perfect winter look: turtleneck sweater, puffer jacket, and skinny jeans."
+    ],
+    rain: [
+      "Rainy days call for waterproof jackets, umbrellas, and non-slippery shoes ☔.",
+      "Try a hoodie layered under a raincoat with waterproof sneakers.",
+      "Monsoon mode: ankle-length jeans, a rain poncho, and a cute cap!"
+    ],
+    casual: [
+      "Casual vibe? Try a pair of jeans, graphic tee, and sneakers. 👖👟",
+      "Keep it chill: joggers, a crop top or hoodie, and your fav kicks.",
+      "Comfy & cool: oversize shirt, ripped jeans, and a crossbody bag."
+    ],
+    party: [
+      "Party ready 🎉? Go for a sleek black dress or blazer with shiny accessories.",
+      "Light up the room with a sequin top, mini skirt, and heels.",
+      "Bold & trendy: leather pants, mesh top, and statement jewelry."
+    ],
+    ethnic: [
+      "Ethnic is elegant! Try a kurta with palazzos or a saree with bold earrings. 🧡",
+      "How about an anarkali with jhumkas and embroidered juttis?",
+      "Go traditional: lehenga skirt with a crop top and dupatta!"
+    ],
+    formal: [
+      "For a formal day, go with a crisp shirt, tailored pants, and loafers.",
+      "Blazer + pencil skirt + heels = power outfit 💼.",
+      "White shirt, trousers, and a statement watch always works."
+    ],
+    date: [
+      "Date night? Try a wrap dress and block heels for charm 💘.",
+      "Soft & romantic: pastel blouse and a pleated skirt.",
+      "Edgy pick: leather jacket over a satin slip dress."
+    ],
+    gym: [
+      "Time to move! Go with leggings, a sports bra, and a zipped hoodie.",
+      "Workout-ready: dry-fit tee, track pants, and running shoes.",
+      "Activewear idea: bike shorts and a crop top with a high ponytail."
+    ],
+    mood: [
+      "Feeling confident? Rock a power suit or a bold jumpsuit 💪.",
+      "Lazy day? Oversized hoodie, leggings, and slides are your best friends 😴.",
+      "Cute mood? Go for a pastel dress with puff sleeves and kitten heels 🧁.",
+      "Feeling bold? Try a statement color like red or neon with chunky accessories 🔥.",
+      "Minimalist vibe? Neutral tones, clean cuts, and sleek accessories 🖤.",
+      "Playful? Denim skirt, colorful top, and funky earrings 💃.",
+      "Feeling classy? Silk blouse, midi skirt, and pearl jewelry 👑."
+    ]
+  };
+
+  // Keyword groups mapped to categories
+  const keywords = {
+    weather: ['weather', 'today', 'sunny', 'hot', 'summer'],
+    cold: ['cold', 'chilly', 'winter', 'snow', 'freezing'],
+    rain: ['rain', 'rainy', 'monsoon', 'wet'],
+    casual: ['casual', 'relaxed', 'everyday', 'normal', 'regular'],
+    party: ['party', 'clubbing', 'night out', 'disco'],
+    ethnic: ['ethnic', 'traditional', 'indian', 'desi', 'festive'],
+    formal: ['formal', 'office', 'meeting', 'professional'],
+    date: ['date', 'romantic', 'crush', 'boyfriend', 'girlfriend'],
+    gym: ['gym', 'workout', 'exercise', 'fitness', 'training'],
+    mood: ['mood', 'confident', 'cute', 'bold', 'lazy', 'playful', 'classy', 'chic', 'feeling', 'vibe']
+  };
+
+  // Loop through keywords
+  for (let category in keywords) {
+    if (keywords[category].some(k => input.includes(k))) {
+      return randomResponse(responses[category]);
+    }
+  }
+
+  // Fallback
+  return "I'm here to help with outfit ideas! Try asking: 'What should I wear if I feel confident?' or 'Suggest a rainy day outfit'.";
+}
+
+  </script>
+</body>
+</html>
